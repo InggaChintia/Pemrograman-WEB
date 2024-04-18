@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UTS Ingga Chintia Sari</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="fixed-top">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Travelya</a></h1>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#paket">Destinasi</a></li>
+                    <li><a href="#reservasi">Reservasi</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Section 1 -->
+    <section id="home">
+        <div class="container">
+            <h1>Selamat datang di Travelya</h1>
+            <h2>Temukan petualangan impian Anda dengan berbagai pilihan paket wisata yang menarik. Mulailah perjalanan tak terlupakan Anda bersama kami!</h2>
+        </div>
+    </section>
+    <!-- End Home -->
+
+    <!-- paket wisata -->
+    <!--<section id="paket">
+        <div class="container">
+            <h2>Pilihan Paket Wisata</h2>
+            <p>Berikut adalah pilihan paket wisata yang kami tawarkan. Silakan jelajahi dan temukan paket yang paling sesuai dengan keinginan dan kebutuhan perjalanan Anda.</p>
+            <div class="row">
+                <div class="package">
+                    <h4><a href="">Bromo</a></h4>
+                    <p>Pilihan paket wisata untuk destinasi menakjubkan Gunung Bromo. Temukan pengalaman petualangan yang tak terlupakan di salah satu keajaiban alam Indonesia ini!</p>
+                </div>
+                <div class="package">
+                    <h4><a href="">Kawah Ijen</a></h4>
+                    <p>Pilihan paket wisata untuk menjelajahi keindahan dan misteri Kawah Ijen. Nikmati petualangan unik di salah satu destinasi alam paling memukau di Indonesia!</p>
+                </div>
+                <div class="package">
+                    <h4><a href="">Malang</a></h4>
+                    <p>Pilihan paket wisata yang mengungkap keajaiban kota Malang, dari keindahan alamnya hingga warisan budayanya. Temukan petualangan seru di destinasi menarik ini!</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End paket wisata Section -->
+
+    <!--Pilihan Paket Wisata-->
+    <section id="paket">
+        <div class="client">
+            <div class="section__container client__container">
+              <h2 class="section__header">Pilihan Paket Wisata</h2>
+              <p>Berikut adalah pilihan paket wisata yang kami tawarkan. 
+                Silakan jelajahi dan temukan paket yang paling sesuai dengan 
+                keinginan dan kebutuhan perjalanan Anda.</p>
+              <div class="client__grid">
+                <div class="client__card">
+                  <img src="img/gambar1.3.jpg" />
+                  <h4><a href="bromo.html">Bromo</a></h4>
+                  <p>
+                    Pilihan paket wisata untuk destinasi menakjubkan Gunung Bromo. 
+                    Temukan pengalaman petualangan yang tak terlupakan di salah satu 
+                    keajaiban alam Indonesia ini!
+                  </p>
+                </div>
+                <div class="client__card">
+                  <img src="img/gambar2.1.jpg" alt="client" />
+                  <h4><a href="kawahijen.html">Kawah Ijen</a></h4>
+                  <p>
+                    Pilihan paket wisata untuk menjelajahi keindahan dan misteri Kawah Ijen. 
+                    Nikmati petualangan unik di salah satu destinasi alam paling memukau di Indonesia!
+                  </p>
+                </div>
+                <div class="client__card">
+                  <img src="img/gambar2.jpg" alt="client" />
+                  <h4><a href="tumpaksewu.html">Air Terjun Tumpak Sewu</a></h4>
+                  <p>
+                    Jelajahi keindahan alam yang memukau di Air Terjun Tumpak Sewu! Nikmati suasana sejuk 
+                    dan pemandangan air terjun yang menakjubkan. Temukan petualangan dan rasakan keajaiban alam yang tiada duanya!
+                  </p>
+                </div>
+                <div class="client__card">
+                    <img src="img/gambar3.4.jpg" alt="client" />
+                    <h4><a href="malang.html">Malang</a></h4>
+                    <p>
+                        Pilihan paket wisata yang mengungkap keajaiban kota Malang, 
+                        dari keindahan alamnya hingga warisan budayanya. 
+                        Temukan petualangan seru di destinasi menarik ini!
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>    
+    </section>
+    <!--End pilihan Paket Wisata-->
+
+    <!--Reservasi-->
+    <section id="reservasi" class="reservasi">
+        <div class="container">
+            <h2>Form Reservasi</h2>
+            <form action="submit_reservasi.php" method="post">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="alamat">Alamat : </label>
+                <input type="text" id="alamat" name="alamat" required>
+        
+                <label for="telepon">No.Telepon:</label>
+                <input type="text" id="telepon" name="telepon">
+        
+                <label for="paket_dipilih">Paket yang dipilih:</label>
+                <select id="paket_dipilih" name="paket_dipilih">
+                    <option value="Paket Wisata Bromo Midnight Tour">Paket Wisata Bromo Midnight Tour</option>
+                    <option value="Paket Wisata Bromo 2 Hari 1 Malam">Paket Wisata Bromo 2 Hari 1 Malam</option>
+                    <option value="Paket Wisata Kawah Ijen, Tumpak Sewu 3 Hari 2 Malam">Paket Wisata Kawah Ijen, Tumpak Sewu 3 Hari 2 Malam</option>
+                    <option value="Paket Wisata Kawah Ijen, Bromo, Tumpak Sewu">Paket Wisata Kawah Ijen, Bromo, Tumpak Sewu</option>
+                    <option value="Paket Wisata Tumpak Sewu 2 Hari 1 Malam">Paket Wisata Tumpak Sewu 2 Hari 1 Malam</option>
+                    <option value="Paket Wisata Tumpak Sewu, Bromo 3 Hari 2 Malam">Paket Wisata Tumpak Sewu, Bromo 3 Hari 2 Malam</option>
+                    <option value="Paket Wisata Malang 1 Hari (full day)">Paket Wisata Malang 1 Hari (full day)</option>
+                    <option value="Paket Wisata Malang 2 Hari 1 Malam">Paket Wisata Malang 2 Hari 1 Malam</option>
+                </select>
+
+                <label for="jumlah_orang">Jumlah Orang:</label>
+                <input type="number" id="jumlah_orang" name="jumlah_orang" required min="1">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!--Javascript untuk memberikan informasi 
+        bahwa data harus diisi-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const alamat = document.getElementById('alamat').value;
+            const telepon = document.getElementById('telepon').value;
+            
+            if (!nama || !alamat || !telepon) {
+                alert('Mohon lengkapi semua kolom!');
+                return;
+            }
+            
+            this.submit();
+        });
+    });
+    </script>
+    
+    <!-- Footer -->
+    <footer id="footer">
+            <div class="footer">
+                <h3>Travelya</h3>
+                <div class="alamat">
+                    <h4>Alamat :</h4>
+                    Jl.Soekarno Hatta<br>
+                    Jatimulyo, Lowokwaru<br>
+                    Malang, Indonesia
+                </div>
+                <div class="kontak">
+                    <h4>Contact : </h4>
+                    Phone: 085855232001<br>
+                    Email: Travelya@gmail.com
+                </div>
+            </div>
+        <div class="copyright">
+            &copy; Copyright <strong>Travelya</strong>. All Rights Reserved
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</body>
+</html>
